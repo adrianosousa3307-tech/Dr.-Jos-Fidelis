@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <script>
+      (function() {
+        try {
+          var origFetch = window.fetch;
+          if (origFetch) {
+            var currentFetch = origFetch;
+            Object.defineProperty(window, 'fetch', {
+              get: function() { return currentFetch; },
+              set: function(fn) { currentFetch = fn; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>" />
+    <link rel="canonical" href="https://drjosefidelis.com.br/" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Dr. José Fidelis | Lentes e Facetas em Resina - Odontologia Estética Premium</title>
+    <meta name="title" content="Dr. José Fidelis | Lentes e Facetas em Resina" />
+    <meta name="description" content="Especialista em Lentes e Facetas em Resina. Transforme seu sorriso com máxima naturalidade, planejamento individualizado e técnica de alta precisão." />
+    <meta name="keywords" content="Dr. José Fidelis, facetas em resina, lentes de resina, odontologia estética, clareamento dental, lentes de contato dental, sorriso natural, dentista de luxo" />
+    <meta name="author" content="Dr. José Fidelis" />
+    <meta name="theme-color" content="#FAF8F5" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Dr. José Fidelis | Lentes e Facetas em Resina Premium" />
+    <meta property="og:description" content="Transforme seu sorriso com extrema naturalidade. Agende sua avaliação personalizada com o Dr. José Fidelis." />
+    <meta property="og:image" content="/src/assets/images/natural_smile_hero_1784660332052.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dr. José Fidelis | Lentes e Facetas em Resina Premium" />
+    <meta name="twitter:description" content="Transforme seu sorriso com extrema naturalidade. Agende sua avaliação personalizada com o Dr. José Fidelis." />
+    <meta name="twitter:image" content="/src/assets/images/natural_smile_hero_1784660332052.jpg" />
+
+    <!-- Google Fonts: Plus Jakarta Sans & Playfair Display / Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Structured Data for Local Business / Dentist -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Dentist",
+      "name": "Consultório Dr. José Fidelis - Odontologia Estética",
+      "image": "/src/assets/images/dr_fidelis_portrait_1784660319923.jpg",
+      "description": "Consultório especializado em Lentes e Facetas em Resina com planejamento digital e alta naturalidade estética.",
+      "medicalSpecialty": "Cosmetic Dentistry",
+      "priceRange": "$$$$",
+      "openingHours": "Mo-Fr 08:00-19:00",
+      "telephone": "+55 (11) 99999-9999",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Brig. Faria Lima, 3477 - Itaim Bibi",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "04538-133",
+        "addressCountry": "BR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "148"
+      }
+    }
+    </script>
+  </head>
+  <body class="bg-[#FAF8F5] text-[#1A1A1A] antialiased selection:bg-[#D4AF37]/20 selection:text-[#1A1A1A] overflow-x-hidden font-sans">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
